@@ -1,0 +1,2 @@
+# reGal
+NFT upload abilities
