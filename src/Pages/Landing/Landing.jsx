@@ -1,4 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef, useMemo } from "react";
+import * as THREE from 'three'
+import ReactDOM from 'react-dom'
+import { Canvas, useFrame } from 'react-three-fiber'
+import { EffectComposer, SSAO } from 'react-postprocessing'
+import Swarm from './Swarm.jsx'
+
+
+
 import Logo from "../../../assets/eeql_logo.png";
 import Download from "../../../assets/apple-brands.png";
 import Mail from '../../../assets/envelope-square-solid.png'
@@ -13,13 +21,30 @@ import {
 } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
 import "./Landing.css";
+import "./Swarm.css"
 import GitHubButton from 'react-github-btn'
 
 const Landing = () => {
   return (
     <div className="landing-div">
+      <div className='root'>
+      <Canvas
+      shadowMap
+      gl={{ alpha: false, antialias: false }}
+      camera={{ fov: 75, position: [0, 0, 70], near: 10, far: 150 }}
+      onCreated={(state) => state.gl.setClearColor('#395a59')}>
+      <ambientLight intensity={1.5} />
+      <pointLight position={[100, 100, 100]} intensity={2} castShadow />
+      <pointLight position={[-100, -100, -100]} intensity={5} color="red" />
+      <Swarm count={40} />
+      <EffectComposer multisampling={0}>
+      <SSAO samples={31} radius={30} intensity={40} luminanceInfluence={0.1} color="blue" />
+      </EffectComposer>
+    </Canvas>
+    </div>
       <br />
       <img className="logo" src={Logo} alt="eeQL" />
+ 
       <i>
         <div className="subhead">"A Reliable Endpoint Test Creation Suite"</div>
       </i>
@@ -31,28 +56,23 @@ const Landing = () => {
           href="https://github.com/oslabs-beta/eeQL"
         >
         </AwesomeButtonSocial>
-        <AwesomeButton size='small' type="github" ripple={true}>
-          {/* <a
-            href="https://github.com/oslabs-beta/eeQL/releases/download/1.0/eeQL-1.0.0.dmg"
-            style={{ textDecoration: "none", color: "black" }}
-            download
-          > */}
+        <AwesomeButton 
+            size='small' 
+            type="github" 
+            ripple={true}
+            onPress={() => window.open("https://github.com/oslabs-beta/eeQL/releases/download/1.0/eeQL-1.0.0.dmg", '_blank')}>
             <img
-              href="https://github.com/oslabs-beta/eeQL/releases/download/1.0/eeQL-1.0.0.dmg"
               src={Download}
               className={'apple-logo'}
               type='small'
-              // width="15px"
-              // style={{ margin: "0px 5px 5px 0px" }}
             />
-            {/* DOWNLOAD */}
-          {/* </a> */}
         </AwesomeButton>
         <AwesomeButton
           type="github"
           size='small'
+          href="mailto:contact@eeql.io"
           ripple={true}
-        ><img className={'email-logo'}src={Mail} alt="Contact Us" href="mailto:contact@eeql.io"/>
+        ><img className={'email-logo'}src={Mail} alt="Contact Us"/>
         </AwesomeButton>
       </div>
       <br />
@@ -61,7 +81,6 @@ const Landing = () => {
         <div className="introduction-text">
             <h3 id="intro-head">Seamless Integration</h3>
           <p></p>
-          {/* <h5 id="intro-sub">Getting Started</h5> */}
           <p id="intro">
             Import your file, select your desired local port and within moments
             you have access to an interface created to facilitate test driven
@@ -80,7 +99,6 @@ const Landing = () => {
         <div className="endpoint-text">
            <h3 id="endpoint-head">REST/GraphQL Compatiability</h3>
            <p></p>
-          {/* <h5 id="endpoint-sub">eeQL Test Builder Module</h5> */}
           <p id="endpoint">
             Within the REST and GraphQL <i>Test Builder Module</i>, you're
             prompted with an option to upload your server file. This allows eeQL
@@ -169,5 +187,7 @@ const Landing = () => {
     </div>
   );
 };
+
+
 
 export default Landing;
