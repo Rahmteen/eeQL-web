@@ -28,7 +28,7 @@ module.exports = {
             }
         ]
     },
-    mode: 'production',
+    mode: 'development',
     devServer: {
         host: 'localhost',
         port: 8080,

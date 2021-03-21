@@ -2,12 +2,317 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+@media (min-width:320px)  { 
+    .landing-div {
+        height: 190px;
+    }
+    .logo {
+        width: 40vw;
+        min-width: 40vw im !important;
+    }
+
+    .apple-logo {
+        width: 4.5vw;
+        padding-bottom: 4%; 
+    }
+    .email-logo {
+        width: 4.5vw;
+    }
+    .introduction-text {
+        font-size: 2.5vw;
+        padding: 10px 10px 0px 10px;
+    }
+    .introduction-div {
+        flex-direction: column;
+
+    }
+    .introduction-gif {
+        width: 55vw;
+        height: 100%;
+        object-fit: contain;
+        margin-left: 0%;
+    }
+    #intro-head {
+        font-size: 15px;
+        text-align: left;
+        color: white;
+    }
+    #intro-sub {
+        font-size: 11px;
+        text-align: left;
+    }
+    .endpoint-text {
+        font-size: 2.5vw;
+        padding: 10px 10px 0px 10px;
+    }
+    .endpoint-div {
+        flex-direction: column;
+
+    }
+    .endpoint-gif {
+        width: 55vw;
+        height: 100%;
+        object-fit: contain;
+        margin-left: 0%;
+    }
+    #endpoint-head {
+        font-size: 15px;
+        text-align: right;
+    }
+    #intro-sub {
+        font-size: 11px;
+        text-align: left;
+    }
+    .footer-div {
+        font-size: 2vw;
+    }
+    #github-logo {
+        width: 3vw;
+    }
+    #linkedin-logo {
+        width: 3vw;
+    }
+    #social-div {
+        padding: 0vh 1.2vh 0vh 1.2vh;
+    }
+    #eeql-dev {
+        align-self:center;
+        margin: 0vh 2vh 0vh 1.5vh;
+        color: white;
+    }
+    
+
+ }
+@media (min-width:481px)  {
+    .landing-div {
+        height: fit-content;
+    }
+    .logo {
+        width: 40vw;
+    }
+    .introduction-text {
+        font-size: 2.5vw;
+    }
+    .introduction-div {
+        flex-direction: column;
+
+    }
+    .endpoint-div {
+        flex-direction: column;
+
+    }
+    .introduction-gif {
+        justify-self: center;
+    }
+
+    #endpoint-head {
+        font-size: 15px;
+        text-align: right;
+    }
+    .apple-logo {
+        width: 3vw;
+        padding-bottom: 4%; 
+    }
+    .email-logo {
+        width: 3vw;
+    }
+    .footer-div {
+        font-size: 1.9vw;
+    }
+    #github-logo {
+        width: 2.75vw;
+    }
+    #linkedin-logo {
+        width: 2.75vw;
+    }
+    #social-div {
+        padding: 0vh 2vh 0vh 2vh;
+    }
+    #eeql-dev {
+        align-self:center;
+        margin: 0vh 2.5vh 0vh 2.5vh;
+        color: white;
+    }
+}
+@media (min-width:641px)  {
+    .landing-div {
+        height: fit-content;
+    }
+    .logo {
+        width: 35vw;
+    }
+    #intro {
+        font-size: 15px;
+    }
+    .introduction-div {
+        flex-direction: column;
+    }
+    .introduction-gif {
+        justify-self: center;
+    }
+    #endpoint {
+        font-size: 15px;
+    }
+    .apple-logo {
+        width: 2.5vw;
+        /* padding-bottom: 4%;  */
+    }
+    .email-logo {
+        width: 2.5vw;
+    }
+    .footer-div {
+        font-size: 1.4vw;
+    }
+    #github-logo {
+        width: 2.2vw;
+    }
+    #linkedin-logo {
+        width: 2.2vw;
+    }
+    #social-div {
+        padding: 0vh 2vh 0vh 2vh;
+    }
+    #eeql-dev {
+        align-self:center;
+        margin: 0vh 3vh 0vh 3vh;
+        color: white;
+    }
+}
+@media (min-width:841px)  {
+    .landing-div {
+        height: fit-content;
+    }
+    .logo {
+        width: 35vw;
+    }
+    #intro {
+        font-size: 15px;
+    }
+    .introduction-div {
+        flex-direction: column;
+    }
+    .introduction-gif {
+        justify-self: center;
+    }
+    #endpoint {
+        font-size: 15px;
+    }
+    .apple-logo {
+        width: 1.6vw;
+        /* padding-bottom: 4%;  */
+    }
+    .email-logo {
+        width: 1.6vw;
+    }
+    .footer-div {
+        font-size: 1.1vw;
+    }
+    #github-logo {
+        width: 1.5vw;
+    }
+    #linkedin-logo {
+        width: 1.5vw;
+    }
+    #social-div {
+        padding: 0vh 2.5vh 0vh 2.5vh;
+    }
+    #eeql-dev {
+        align-self:center;
+        margin: 0vh 4vh 0vh 4vh;
+        color: white;
+    }
+}
+@media (min-width:1281px) {
+    .landing-div {
+        height: fit-content;
+    }
+    .logo {
+        width: 20vw;
+    }
+    .introduction-div {
+        flex-direction: row;
+
+    }
+    .apple-logo {
+        width: 0.7vw;
+    }
+    .email-logo {
+        width: 0.8vw;
+    }
+    .introduction-gif {
+
+        width: 30vw;
+        margin-left: 20%;
+    }
+    .introduction-text {
+        font-size: 2vw;
+        flex-direction: row;
+        padding: 10px 10px 10px 20px;
+    }
+    #intro-head {
+        font-size: 23px;
+        text-align: left;
+    }
+    #intro-sub {
+        font-size: 15px;
+        text-align: left;
+    }
+    .endpoint-div {
+        flex-direction: row-reverse;
+
+    }
+    .endpoint-gif {
+
+        width: 30vw;
+        margin-right: 20%;
+    }
+    .endpoint-text {
+        font-size: 2vw;
+        flex-direction: row;
+        padding: 10px 10px 10px 20px;
+    }
+    #endpoint-head {
+        font-size: 23px;
+        text-align: right;
+        color: white;
+    }
+    #intro-sub {
+        font-size: 18px;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        text-align: left;
+        color: white;
+    }
+    #endpoint {
+        font-size: 15px;
+    }
+    .footer-div {
+        font-size: .6vw;
+    }
+    #github-logo {
+        width: .75vw;
+    }
+    #linkedin-logo {
+        width: .75vw;
+    }
+    #social-div {
+        padding: 0vh 4vh 0vh 4vh;
+    }
+    #eeql-dev {
+        align-self:center;
+        margin: 0vh 4vh 0vh 4vh;
+        color: white;
+    }
+}
+
+
+
 body {
     background-color: #1f1f21;
 }
 
 .landing-div {
-    background-color: #1f1f21;
+    background-color: #395a59;
     /* position: fixed; */
 }
 
@@ -15,7 +320,6 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 10%;
     animation-name: logo;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
@@ -25,37 +329,32 @@ body {
     display: flex;
     justify-content: center;
     color: white;
-    font-size: 10px;
+    font-size: 1.5vh;
     animation-name: logo;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
     animation-duration: 5s;
 }
+
 .button-div {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: center;
     animation-name: buttons;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
     animation-duration: 5s;
 }
+.git-star {
+    background-image: none;
+}
+
 
 .introduction-div {  
-    width: 50%;
-    height: 50%;
-    flex-shrink: 0;
-    flex-grow: 0;
-    background-color: #e7e7c0;
-    border-radius: 5px;
-    border: solid 3px #b8b899;
-    margin-left: 25%;
-    margin-right: 25%;
-    padding: 10px;
-    margin-bottom: 25px;
+    background-color: #1f1f21;
+    padding: 50px;
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
     justify-content: center;
     animation-name: introduction-div;
     animation-iteration-count: 1;
@@ -63,42 +362,30 @@ body {
     animation-duration: 5s;
 }
 .introduction-gif {
-    border: solid 3px #b8b899;
-    flex-shrink: 0;
-    width: 50%;
-    height: 50%;
-    border-radius: 10px;
+    border-radius: 4px;
+    align-self: flex-start;
 }
 
 .introduction-text {
-    width: 50%;
     height: 50%;
-    flex-shrink: 0;
+    margin-right: 20%;
+    flex-shrink:1 0;
     text-align: right;
     color: #4b4b4e;
-    padding: 10px 10px 10px 50px;
-}
+    align-self:flex-end;
 
+}
 #intro {
     text-align: left;
-    padding: 10px 10px 0px 0px;
+    color: white;
+    line-height: 18px;
 }
 
 .endpoint-div {
-    width: 50%;
-    height: 50%;
-    flex-shrink: 0;
-    flex-grow: 0;
-    background-color: #e7e7c0;
-    border-radius: 5px;
-    border: solid 3px #b8b899;
-    margin-left: 25%;
-    margin-right: 25%;
-    padding: 10px;
-    margin-bottom: 30px;
+    background-color: #395a59;
+    box-shadow: 0px 0px 2000px 0px #2a2b2b;
+    padding: 50px;
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row-reverse;
     justify-content: center;
     animation-name: endpoint-div;
     animation-iteration-count: 1;
@@ -106,67 +393,71 @@ body {
     animation-duration: 5s;
 }
 .endpoint-gif {
-    border: solid 3px #b8b899;
-    width: 50%;
-    height: 50%;
-    flex-shrink: 0;
-    flex-grow: 0;
-    border-radius: 10px;
+    border-radius: 4px;
+    align-self: flex-end;
 }
 
 .endpoint-text {
-    width: 50%;
     height: 50%;
-    flex-shrink: 0;
-    flex-grow: 0;
+    margin-left: 20%;
+    flex-shrink:1 0;
     text-align: right;
     color: #4b4b4e;
-    padding: 10px 50px 10px 20px;
+    align-self: flex-end;
 }
 
 #endpoint {
     text-align: right;
-    padding: 10px 10px 0px 0px;
+    line-height: 18px;
+    color: white;
 }
 
-.footer-div {
-    width: 30%;
-    height: 50%;
-    flex-shrink: 0;
-    flex-grow: 0;
-    background-color: #e7e7c0;
-    border-radius: 5px;
-    border: solid 3px #b8b899;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+#endpoint-head {
+    font-weight: 500;
+    text-align: right;
+    color: white;
+}
+
+#endpoint-sub {
+    color:white;
+}
+.footer-head {
+    padding: 1vw 0vw 0vw 0vw;
+    background-color: #395a59; 
+    text-align: center;
     opacity: 1;
     animation-name: footer-div;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
     animation-duration: 5s;
 }
-#github-logo {
-    width: 25px;
+
+.footer-div {
+    padding: 4vh 0px 4vh 0px;
+    background-color: #1f1f21;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 0px 1000px 0px #507271;
+    opacity: 1;
+    animation-name: footer-div;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
 }
 
 .footer-social {
     display: flex;
     flex-direction: row;
+
 }
 
 #social-div {
-    padding: 0px 30px 0px 30px;
+
+    color: white;
 }
-#social-icon {
-    display: flex;
-    align-content: space-between;
-    justify-content: center;
-}
+
+
 
 @keyframes logo {
     0% {
