@@ -1,6 +1,13 @@
 /* * {
     box-sizing: border-box;
   } */
+  @media (min-width:220px)  { 
+    .root {
+    z-index:-1;
+    width: 100%;
+    height: 300vh;
+    }
+ }
 @media (min-width:320px)  { 
     .root {
     z-index:-1;
@@ -51,11 +58,12 @@
         }
 
 }
+
 @media (min-width:641px)  {
     .root {
         z-index:-1;
         width: 100%;
-        height: 155vh;
+        height: 150vh;
         }
 
 }
@@ -71,7 +79,7 @@
     .root {
         z-index:-1;
         width: 100%;
-        height: 160vh;
+        height: 170vh;
         }
 
 }
@@ -83,11 +91,18 @@
         }
 
 }
-@media (min-width:920px)  {
+@media (min-width:1120px) and (min-height: 600px)  {
     .root {
         z-index:-1;
         width: 100%;
         height: 185vh;
+        }
+    }
+@media (min-width:1261px) {
+    .root {
+        z-index:-1;
+        width: 100%;
+        height: 130vh;
         }
 
 }
