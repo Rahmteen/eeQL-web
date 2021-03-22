@@ -1,13 +1,13 @@
 import React from 'react';
 import { Route, Switch } from "react-router-dom";
 import Landing from './Pages/Landing/Landing.jsx';
-import Marketplace from './Pages/Marketplace/Marketplace.jsx';
+import NavBar from './Components/NavBar/NavBar.jsx'
+import Footer from './Components/Footer/Footer.jsx'
 
 const App = () => {
       return (
-        <Switch>        
-            <Route exact path='/' component={Landing}/>
-            <Route exact path='/marketplace' component={Marketplace}/>
+        <Switch>
+            <Route path='/' component={Landing}/>
         </Switch>
 )}
 

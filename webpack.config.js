@@ -11,12 +11,17 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.(png|jpe?g|gif)$/i,
+                use: 'file-loader'
+              },
+            {
                 test: /.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: {
                   loader: "babel-loader",
                 },
               },
+            
             { 
                 test: /\.css$/, 
                 use: ['style-loader', 'css-loader'] 
@@ -45,7 +50,8 @@ module.exports = {
       plugins: [
 
         new HtmlWebpackPlugin({
-            template: 'src/index.html'
+            template: 'src/index.html',
+            favicon: "./assets/eeql-favicon.png"
         })
     ]
 
