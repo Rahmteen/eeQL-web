@@ -370,12 +370,17 @@ body {
 }
 .introduction-gif {
     border-radius: 4px;
+    margin-bottom: 10px;
     align-self: flex-start;
 }
 
 .introduction-text {
     height: 50%;
+    background-color: #1a191c;
     margin-right: 20%;
+    margin-left: 1%;
+    padding: 15px;
+    border-radius: 4px;
     flex-shrink:1 0;
     text-align: right;
     color: #4b4b4e;
@@ -384,15 +389,15 @@ body {
 }
 #intro {
     text-align: left;
-    color: black;
-    font-weight: 600;
+    color: #8c7458;
+    font-weight: 500;
     line-height: 18px;
 }
 
 #intro-head {
     font-weight: 700;
     text-align: left;
-    color: rgb(50, 50, 50);
+    color: #e9c7a1;
 }
 
 .endpoint-div {
@@ -411,11 +416,16 @@ body {
 }
 .endpoint-gif {
     border-radius: 4px;
+    margin-bottom: 10px;
     align-self: flex-end;
 }
 
 .endpoint-text {
-    height: 50%;
+    height: 50%;    
+    background-color: #1a191c;
+    margin-right: 1%;
+    border-radius: 4px;
+    padding: 15px;
     margin-left: 20%;
     flex-shrink:1 0;
     text-align: right;
@@ -426,14 +436,14 @@ body {
 #endpoint {
     text-align: right;
     line-height: 18px;
-    color: black;
-    font-weight: 600;
+    color: #8c7458;
+    font-weight: 500;
 }
 
 #endpoint-head {
     font-weight: 700;
     text-align: right;
-    color: rgb(50, 50, 50);
+    color: #e9c7a1;
 }
 
 #endpoint-sub {

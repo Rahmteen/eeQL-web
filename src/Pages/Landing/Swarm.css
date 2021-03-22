@@ -55,7 +55,15 @@
     .root {
         z-index:-1;
         width: 100%;
-        height: 135vh;
+        height: 155vh;
+        }
+
+}
+@media (min-width:741px)  {
+    .root {
+        z-index:-1;
+        width: 100%;
+        height: 160vh;
         }
 
 }
@@ -63,11 +71,27 @@
     .root {
         z-index:-1;
         width: 100%;
-        height: 125vh;
+        height: 160vh;
         }
 
 }
-@media (min-width:1281px) {
+@media (min-width:920px)  {
+    .root {
+        z-index:-1;
+        width: 100%;
+        height: 175vh;
+        }
+
+}
+@media (min-width:920px)  {
+    .root {
+        z-index:-1;
+        width: 100%;
+        height: 185vh;
+        }
+
+}
+@media (min-width:1261px) {
     .root {
         z-index:-1;
         width: 100%;
