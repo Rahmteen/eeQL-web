@@ -31,7 +31,7 @@ const Landing = () => {
       <Canvas
       shadowMap
       gl={{ alpha: false, antialias: false }}
-      camera={{ fov: 70, position: [0, 0, 100], near: 1, far: 200 }}
+      camera={{ fov: 30, position: [0, 0, 100], near: 1, far: 200 }}
       onCreated={(state) => state.gl.setClearColor('#395a59')}>
       <ambientLight intensity={1.5} />
       <pointLight position={[100, 100, 100]} intensity={2} castShadow />
