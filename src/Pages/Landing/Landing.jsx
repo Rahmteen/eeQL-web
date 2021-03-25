@@ -10,8 +10,8 @@ import Swarm from './Swarm.jsx'
 import Logo from "../../../assets/eeql_logo.png";
 import Download from "../../../assets/apple-brands.png";
 import Mail from '../../../assets/envelope-square-solid.png'
-import Introduction from "../../../assets/eeql-1-gif.gif";
-import Endpoint from "../../../assets/eeql-2-gif.gif";
+import Introduction from "../../../assets/intro.gif";
+import Endpoint from "../../../assets/rest.gif";
 import Git from "../../../assets/github-brands.png";
 import LI from "../../../assets/linkedin-brands.png";
 import {

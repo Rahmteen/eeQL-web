@@ -360,7 +360,7 @@ body {
 .introduction-div {  
     background-color: transparent;
     /* background-color: #1f1f21; */
-    padding: 50px;
+    padding: 40px;
     display: flex;
     justify-content: center;
     animation-name: introduction-div;
@@ -405,7 +405,7 @@ body {
     /* background-color: #395a59; */
 
     /* box-shadow: 0px 0px 2000px 0px #2a2b2b; */
-    padding: 50px;
+    padding: 40px;
     /* margin-bottom: 20px; */
     display: flex;
     justify-content: center;
