@@ -60,7 +60,7 @@ const Landing = () => {
             size='small' 
             type="github" 
             ripple={true}
-            onPress={() => window.open("https://github.com/oslabs-beta/eeQL/releases/download/1.0/eeQL-1.0.0.dmg", '_blank')}>
+            onPress={() => window.open("https://github.com/oslabs-beta/eeQL/releases/download/1.1/eeQL-1.0.0.dmg", '_blank')}>
             <img
               src={Download}
               className={'apple-logo'}
